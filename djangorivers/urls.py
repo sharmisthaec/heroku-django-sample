@@ -17,5 +17,5 @@ from django.conf.urls import url, include
 from api import views
 
 urlpatterns = [
-    url(r'^$', views.HomePageView,name='home'),
+    url(r'^$', views.HomePageView.as_view(),name='home'),
 ]
